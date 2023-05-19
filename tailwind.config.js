@@ -13,6 +13,7 @@ module.exports = {
         gold: '#CDB466',
         darkGold: '#DFA73E',
         brightOrange: '#FF7F00',
+        gradientGray: 'linear-gradient(90deg, #323435 0%, #0C0C0C 99.99%, #2A2B2C 100%, #2A2B2C 100%)'
       },
     },
   },
