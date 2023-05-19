@@ -581,12 +581,35 @@ video {
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-brightOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 127 0 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 254 / var(--tw-text-opacity));
 }
 
 #main-container {
@@ -598,6 +621,12 @@ video {
 
 .nav-items {
   font-family: 'Germany Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #FFFFFE;
+}
+
+.hover\:bg-brightOrangeLight:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 161 67 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gold:hover {
