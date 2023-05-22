@@ -576,12 +576,20 @@ video {
   left: 4rem;
 }
 
+.left-6{
+  left: 1.5rem;
+}
+
 .right-0{
   right: 0px;
 }
 
 .right-3{
   right: 0.75rem;
+}
+
+.right-6{
+  right: 1.5rem;
 }
 
 .top-0{
@@ -592,24 +600,8 @@ video {
   top: 0.75rem;
 }
 
-.left-6{
-  left: 1.5rem;
-}
-
-.right-6{
-  right: 1.5rem;
-}
-
-.-z-\[1\]{
-  z-index: -1;
-}
-
 .z-10{
   z-index: 10;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .m-0{
@@ -879,20 +871,6 @@ video {
   background-color: rgb(255 127 0 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 254 / var(--tw-bg-opacity));
-}
-
-.bg-gradientGray{
-  background-color: linear-gradient(90deg, #323435 0%, #0C0C0C 99.99%, #2A2B2C 100%, #2A2B2C 100%);
-}
-
-.bg-gray-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
 .bg-lightGray{
   --tw-bg-opacity: 1;
   background-color: rgb(108 108 108 / var(--tw-bg-opacity));
@@ -1119,6 +1097,44 @@ video {
   box-shadow: -5px 5px 10px rgba(41, 42, 42, 0.2), 5px -5px 10px rgba(41, 42, 42, 0.2), -5px -5px 10px rgba(61, 62, 64, 0.9), 5px 5px 13px rgba(41, 42, 42, 0.9), inset 1px 1px 2px rgba(61, 62, 64, 0.3), inset -1px -1px 2px rgba(41, 42, 42, 0.5);
 }
 
+/* Hamburger Menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle, 
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #6C6C6C;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px);
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1179,10 +1195,6 @@ video {
 }
 
 @media (min-width: 480px){
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:w-auto{
     width: auto;
   }
@@ -1327,4 +1339,6 @@ video {
     line-height: 1.5;
   }
 }
+
+
 
