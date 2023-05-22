@@ -73,7 +73,6 @@ html, body{
 .open {
     transform: rotate(90deg);
     transform: translateY(0px);
-
 }
 
 .open .hamburger-top {

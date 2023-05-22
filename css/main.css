@@ -722,8 +722,8 @@ video {
   width: 1.25rem;
 }
 
-.w-\[250px\]{
-  width: 250px;
+.w-\[280px\]{
+  width: 280px;
 }
 
 .w-\[600px\]{
@@ -1265,8 +1265,8 @@ html, body{
     width: 25%;
   }
 
-  .md\:w-\[350px\]{
-    width: 350px;
+  .md\:w-\[40px\]{
+    width: 40px;
   }
 
   .md\:w-full{
