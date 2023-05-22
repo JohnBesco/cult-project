@@ -20,7 +20,8 @@ module.exports = {
       },
       fontFamily: {
         gothic: ['Germania One'],
-        cursive: ['Cinzel Decorative']
+        cursive: ['Cinzel Decorative'],
+        lato: ['Lato']
       }
     },
   },
