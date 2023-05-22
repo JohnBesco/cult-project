@@ -10,9 +10,15 @@
     <title>Cult</title>
 <body>
 
-    <div id="main-container">
+
+    <div id="main-container" class="relative">
+        <img src="assets/topleftgraphic.svg" alt="" class="absolute -z-1 top-0 left-0">
+        <img src="assets/toprightgraphic.svg" alt="" class="absolute -z-1 top-0 right-0">
+
+
         <!-- Nav Bar -->
         <nav class="relative container mx-auto p-6">
+
             <div class="flex items-center justify-between pt-5">
                 <div class="pt-2">
                     <img src="assets/cultlogo1.png" alt="" id="logo">
@@ -22,17 +28,19 @@
                     <a href="#" class="hover:text-gold" >About Us</a>
                     <a href="#" class="hover:text-gold">Tokenomics</a>
                     <a href="#" class="hover:text-gold">Roadmap</a>
-                    <a href="#" class="hover:text-gold">Whitepaper</a>
+                    <a href="#" class="hover:text-gold relative">Whitepaper <span><img src="assets/whitepapericon 1.svg" alt="" class="m-0 p-0 animate-spin h-5 w-5 mr-3 absolute -top-2 left-16"></span></a>
                 </div>
                 <a href="" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightOrange rounded-full 
                 baseline hover:bg-brightOrangeLight nav-items">Buy Cult</a>
             </div>
+            
+
         </nav>
 
         <!-- Hero Section -->
 
         <section id="hero" class="mt-48">
-            <div class="container flex flex-col md:flex-row md:justify-between items-center 
+            <div class="container flex flex-col z-10 md:flex-row md:justify-between items-center 
                 px-6 mx-auto mt-10 space-y-0 md:space-y-0">
                 <div class="flex flex-col mb-32 space-y-12 p-10">
                     <h1 class="max-w-md text-6xl font-bold text-center font-gothic text-white md:text-8xl 
@@ -50,7 +58,7 @@
                     
                     <div class="flex justify-between space-x-5 md:justify-between">
                         <a href="" class="w-40 p-3 px-6 pt-2 text-white text-center bg-brightOrange rounded-full 
-                            baseline hover:bg-brightOrangeLight font-gothic text-xl">
+                            baseline hover:bg-brightOrangeLight font-gothic text-xl animate-bounce">
                             Buy Cult
                         </a>
                         <a href="#" class="w-40 p-3 px-6 pt-2 text-lightGray text-center border-2 border-lightGray rounded-full 
@@ -59,8 +67,8 @@
                         </a>
                     </div>                    
                 </div>
-                <div class="">
-                    <img src="assets/cultlogo.png" alt="">
+                <div class="z-10">
+                    <img src="assets/cultlogo.png" alt="" class="z-10">
                 </div>
             </div>
         </section>
@@ -69,7 +77,7 @@
 
         <section id="trade-section" class="mt-40">
             <div class="container flex flex-col justify-around p-10 md:flex-row md:space-x-10">
-                <div class="flex flex-col p-8 relative rounded-md mb-10 h-[250px] neu gradient md:flex-col md:w-1/3">
+                <div class="flex flex-col p-8 relative rounded-md mb-10 h-[250px] neu gradient transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 md:flex-col md:w-1/3">
                     <a href=""><img src="assets/tradeicon.png" alt="Trade Icon" class="absolute top-3 right-3 w-12 "></a>
                     <p class="font-gothic text-gold text-xl">Swap on Raydium</p>
                     <span class="border-2 border-gold w-1/3 my-2"></span>
@@ -77,7 +85,7 @@
                         rypto community & Swap on Raydium!
                     </p>
                 </div>
-                <div class="flex flex-col p-8 relative rounded-md mb-10 h-[250px] neu gradient md:flex-col md:w-1/3">
+                <div class="flex flex-col p-8 relative rounded-md mb-10 h-[250px] neu gradient transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 md:flex-col md:w-1/3">
                     <a href=""><img src="assets/tradeicon.png" alt="Trade Icon" class="absolute top-3 right-3 w-12 "></a>
                     <p class="font-gothic text-gold text-xl" >Swap on Birdeye</p>
                     <span class="border-2 border-gold w-1/3 my-2"></span>
@@ -85,7 +93,7 @@
                         $CULT swapper on Birdeye? Join the flock today!
                     </p>
                 </div>
-                <div class="flex flex-col p-8 relative rounded-md h-[250px] neu gradient md:flex-col md:w-1/3">
+                <div class="flex flex-col p-8 relative rounded-md h-[250px] neu gradient transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  md:flex-col md:w-1/3">
                     <a href=""><img src="assets/tradeicon.png" alt="Trade Icon" class="absolute top-3 right-3 w-12 "></a>
 
                     <p class="font-gothic text-gold text-xl" >Swap on Jupitar</p>
@@ -119,7 +127,7 @@
 
                     <div class="flex justify-between mt-5 md:justify-start md:space-x-10">
                         <a href="" class="w-40 p-3 px-6 pt-2 text-white text-center bg-brightOrange rounded-full 
-                            baseline hover:bg-brightOrangeLight font-gothic text-xl">
+                            baseline hover:bg-brightOrangeLight font-gothic text-xl animate-bounce">
                             Buy Cult
                         </a>
                         <a href="#" class="w-40 p-3 px-6 pt-2 text-lightGray text-center border-2 border-lightGray rounded-full 
@@ -186,7 +194,7 @@
 
             <div class="container flex flex-col justify-center items-center w-full md:flex-row md:space-x-10 ">
 
-                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 md:w-1/4 md:h-full">
+                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 transition duration-500 hover:scale-125 md:w-1/4 md:h-full">
                     <img src="assets/foundationsicon.png" alt="" class="mb-10">
                     <h2 class="font-gothic text-white text-4xl mb-2">Phase 1</h2>
                     <h3 class="font-gothic text-lightGray text-2xl mb-2">Foundation & Launch</h3>
@@ -210,7 +218,7 @@
                     </ul>   
                 </div>
 `
-                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 md:w-1/4 md:h-full">
+                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 transition duration-500 hover:scale-125 md:w-1/4 md:h-full">
                     <img src="assets/momentumicon.png" alt="" class="mb-10">
                     <h2 class="font-gothic text-white text-4xl mb-2">Phase 2</h2>
                     <h3 class="font-gothic text-lightGray text-2xl mb-2">Building Momentum</h3>
@@ -234,7 +242,7 @@
                     </ul>   
                 </div>
 
-                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 md:w-1/4 md:h-full">
+                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 transition duration-500 hover:scale-125 md:w-1/4 md:h-full">
                     <img src="assets/communityicon.png" alt="" class="mb-10">
                     <h2 class="font-gothic text-white text-4xl mb-2">Phase 3</h2>
                     <h3 class="font-gothic text-lightGray text-2xl mb-2">Community Empowerment</h3>
@@ -258,7 +266,7 @@
                     </ul> 
                 </div>
 
-                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 md:w-1/4 md:h-full">
+                <div class="flex flex-col justify-center items-center p-5 mb-10 rounded-xl hover:bg-gray-800 transition duration-500 hover:scale-125 md:w-1/4 md:h-full">
                     <img src="assets/growthicon.png" alt="" class="mb-10">
                     <h2 class="font-gothic text-white text-4xl mb-2">Phase 4</h2>
                     <h3 class="font-gothic text-lightGray text-2xl mb-2">Sustainable Growth</h3>
@@ -281,11 +289,27 @@
                         </li>
                     </ul>   
                 </div>
-
-
-
-
             </div>
+        </section>
+
+
+    
+        <!-- Socials Section -->
+
+        <section class="mt-80">
+
+            <div class="container flex flex-col justify-center items-center md:space-x-20 md:flex-row ">
+                <a href=""><img src="assets/twitter.png" alt="" class="mb-10"></a>
+                <a href=""><img src="assets/discord.png" alt="" class="mb-10"></a>
+                <a href=""><img src="assets/telegram.png" alt="" class="mb-10"></a>
+                <a href=""><img src="assets/birdeye.png" alt="" class="mb-10"></a>
+                <a href=""><img src="assets/raydium.png" alt="" class="mb-10"></a>
+            </div>
+
+            <div class="flex flex-row justify-center items-center">
+                <p class="text-gray-600 mb-10 mt-10">2023 Copyright $CULT Token</p>
+            </div>
+
 
         </section>
         
