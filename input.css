@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 #main-container {
     width: 100%;
     height: 100%;
