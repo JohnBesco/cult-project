@@ -592,6 +592,14 @@ video {
   top: 0.75rem;
 }
 
+.left-6{
+  left: 1.5rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
 .-z-\[1\]{
   z-index: -1;
 }
@@ -826,6 +834,16 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.self-end{
+  align-self: flex-end;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -861,6 +879,25 @@ video {
   background-color: rgb(255 127 0 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 254 / var(--tw-bg-opacity));
+}
+
+.bg-gradientGray{
+  background-color: linear-gradient(90deg, #323435 0%, #0C0C0C 99.99%, #2A2B2C 100%, #2A2B2C 100%);
+}
+
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-lightGray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 108 108 / var(--tw-bg-opacity));
+}
+
 .p-0{
   padding: 0px;
 }
@@ -888,6 +925,11 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pt-2{
@@ -1023,6 +1065,11 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1134,6 +1181,14 @@ video {
 @media (min-width: 480px){
   .sm\:hidden{
     display: none;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
+  .sm\:self-center{
+    align-self: center;
   }
 }
 
