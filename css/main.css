@@ -674,6 +674,10 @@ video {
   margin-top: 20rem;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -1110,6 +1114,11 @@ video {
   color: rgb(255 255 254 / var(--tw-text-opacity));
 }
 
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @media (prefers-color-scheme: dark){
   .dark\:text-gray-400{
     --tw-text-opacity: 1;
@@ -1139,6 +1148,10 @@ video {
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-full{
