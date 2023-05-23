@@ -7,3 +7,17 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('hidden');
 });
 
+const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        } else {
+            entry.target.classList.remove('animate__animated', 'animate__fadeInUp');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hiddenEl');
+
+hiddenElements.forEach((hiddenEl) => observer.observe(hiddenEl));
