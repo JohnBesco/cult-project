@@ -10,8 +10,8 @@
     <title>Cult</title>
 <body>
     <div id="main-container" class="relative">
-        <img src="assets/topleftgraphic.svg" alt="" class="absolute -z-1 top-0 left-0">
-        <img src="assets/toprightgraphic.svg" alt="" class="absolute -z-1 top-0 right-0">
+        <img src="assets/topleftgraphic.svg" alt="" class="md:visible absolute -z-1 top-0 left-0 ">
+        <img src="assets/toprightgraphic.svg" alt="" class="sm:invisible md:visible absolute -z-1 top-0 right-0">
         <!-- Nav Bar -->
         <nav class="relative container mx-auto p-6">
 
@@ -157,27 +157,26 @@
 
         <!-- Tokenomics Section -->
 
-        <section id="tokenomics-section" class="mt-80 flex flex-col justify-center items-center">
+        <section id="tokenomics-section" class="mt-80 flex flex-col justify-center items-center relative">
 
             <div class="container">
-
                 <div class="flex flex-row justify-center md:mb-10">
                     <h1 class="font-gothic text-gold text-5xl mb-10 text-center md:text-left md:text-6xl md:leading-normal">
                         Tokenomics
                     </h1>
                 </div>
 
-                <div class="flex flex-col text-center border-white/[.35] md:p-12 justify-center items-center md:flex-row md:border-[1px] ">
-                    <img src="" alt="">
+                <div class="flex flex-col text-center border-white/[.35] md:p-12 justify-center items-center md:flex-row md:border-[1px] relative ">
+                    <img src="assets/tokenomicsgraphic.svg" alt="" class="sm:invisible md:visible absolute top-0 right-0 -z-1">
                     <div class="flex text-center justify-center items-center mb-10 md:w-1/2">
                         <img src="assets/chart.png" alt="Tokenomics Chart" class="m-0 p-0 w-[400px] md:w-[400px]">
                     </div>
     
-                    <div class="md:w-1/2">
+                    <div class="md:w-1/2 z-10">
                         <h3 class="font-gothic text-white text-3xl md:text-4xl mb-4">
                             Transparent and Sustainable: 
                         </h3>
-                        <p class="font-cursive text-xs text-lightGray md:text-xl md:leading-loose mb-4">At $CULT, we prioritizes transparency, integrity, and community-driven decision-making. Our tokenomics have been carefully crafted to foster growth while protecting the interests of our community. We are dedicated to providing regular updates and maintaining an open line of communication to ensure that $CULT remains a trusted and sustainable project.
+                        <p class="font-cursive text-xs text-white md:text-xl md:leading-loose mb-4">At $CULT, we prioritizes transparency, integrity, and community-driven decision-making. Our tokenomics have been carefully crafted to foster growth while protecting the interests of our community. We are dedicated to providing regular updates and maintaining an open line of communication to ensure that $CULT remains a trusted and sustainable project.
                             Join the $CULT revolution today and be part of a community that believes in the power of decentralization, inclusivity, and shared success.
                         </p>
 
@@ -190,6 +189,7 @@
                     </div>
                 </div>
             </div>
+            <img src="assets/tokenomicsdotgrid.svg" alt="" class="absolute bottom-3 right-10">
         </section>
 
         <!--- Roadmap Section -->
