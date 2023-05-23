@@ -126,3 +126,22 @@ html, body{
     transition-delay: 1000ms;
 }
 
+
+
+
+.phases:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.phases:nth-child(2) {
+    transition-delay: 400ms;
+
+}
+
+.phases:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.phases:nth-child(4) {
+    transition-delay: 800ms;
+}

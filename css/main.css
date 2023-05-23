@@ -2818,6 +2818,10 @@ video {
   margin-top: 20rem;
 }
 
+.mt-44{
+  margin-top: 11rem;
+}
+
 .block{
   display: block;
 }
@@ -3139,6 +3143,11 @@ video {
   line-height: 1rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -3359,6 +3368,22 @@ html, body{
   transition-delay: 1000ms;
 }
 
+.phases:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.phases:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.phases:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.phases:nth-child(4) {
+  transition-delay: 800ms;
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3435,6 +3460,26 @@ html, body{
 
   .md\:mb-10{
     margin-bottom: 2.5rem;
+  }
+
+  .md\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .md\:mt-48{
+    margin-top: 12rem;
+  }
+
+  .md\:mt-96{
+    margin-top: 24rem;
+  }
+
+  .md\:mt-64{
+    margin-top: 16rem;
+  }
+
+  .md\:mt-56{
+    margin-top: 14rem;
   }
 
   .md\:block{
@@ -3559,6 +3604,11 @@ html, body{
     line-height: 1.75rem;
   }
 
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:leading-loose{
     line-height: 2;
   }
@@ -3567,4 +3617,3 @@ html, body{
     line-height: 1.5;
   }
 }
-
