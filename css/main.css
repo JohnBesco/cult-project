@@ -568,8 +568,20 @@ video {
   position: relative;
 }
 
+.-left-2{
+  left: -0.5rem;
+}
+
 .-top-2{
   top: -0.5rem;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.bottom-1{
+  bottom: 0.25rem;
 }
 
 .left-0{
@@ -604,92 +616,12 @@ video {
   top: 0.75rem;
 }
 
-.top-1{
-  top: 0.25rem;
-}
-
-.top-2{
-  top: 0.5rem;
-}
-
-.bottom-1{
-  bottom: 0.25rem;
-}
-
-.bottom-2{
-  bottom: 0.5rem;
-}
-
-.left-1{
-  left: 0.25rem;
-}
-
-.right-1{
-  right: 0.25rem;
-}
-
-.-left-1{
-  left: -0.25rem;
-}
-
-.-left-2{
-  left: -0.5rem;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.right-2{
-  right: 0.5rem;
-}
-
-.bottom-3{
-  bottom: 0.75rem;
-}
-
-.right-10{
-  right: 2.5rem;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.z-10{
-  z-index: 10;
-}
-
-.z-0{
-  z-index: 0;
-}
-
 .-z-10{
   z-index: -10;
 }
 
-.-z-0{
-  z-index: 0;
-}
-
-.-z-\[2\]{
-  z-index: -2;
-}
-
-.-z-\[3\]{
-  z-index: -3;
-}
-
-.-z-\[1\]{
-  z-index: -1;
-}
-
-.-z-\[5\]{
-  z-index: -5;
-}
-
-.-z-\[0\]{
-  z-index: 0;
+.z-10{
+  z-index: 10;
 }
 
 .m-0{
@@ -806,8 +738,8 @@ video {
   width: 1.25rem;
 }
 
-.w-\[280px\]{
-  width: 280px;
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-\[600px\]{
@@ -816,14 +748,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[300px\]{
-  width: 300px;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .max-w-md{
@@ -948,8 +872,9 @@ video {
   border-width: 2px;
 }
 
-.border-solid{
-  border-style: solid;
+.border-\[\#6C6C6C\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(108 108 108 / var(--tw-border-opacity));
 }
 
 .border-gold{
@@ -966,33 +891,14 @@ video {
   border-color: rgb(255 255 254 / .35);
 }
 
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 254 / var(--tw-border-opacity));
-}
-
-.border-\[\#6C6C6C\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(108 108 108 / var(--tw-border-opacity));
+.bg-\[\#282A2B\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 42 43 / var(--tw-bg-opacity));
 }
 
 .bg-brightOrange{
   --tw-bg-opacity: 1;
   background-color: rgb(255 127 0 / var(--tw-bg-opacity));
-}
-
-.bg-lightGray{
-  --tw-bg-opacity: 1;
-  background-color: rgb(108 108 108 / var(--tw-bg-opacity));
-}
-
-.bg-gradientGray{
-  background-color: linear-gradient(90deg, #323435 0%, #0C0C0C 99.99%, #2A2B2C 100%, #2A2B2C 100%);
-}
-
-.bg-\[\#282A2B\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 42 43 / var(--tw-bg-opacity));
 }
 
 .p-0{
@@ -1019,10 +925,6 @@ video {
   padding: 2rem;
 }
 
-.p-20{
-  padding: 5rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1031,31 +933,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pt-2{
@@ -1161,9 +1038,9 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-600{
+.text-gray-700{
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-green-500{
@@ -1191,37 +1068,16 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.opacity-5{
-  opacity: 0.05;
-}
-
-.opacity-10{
-  opacity: 0.1;
-}
-
-.opacity-20{
-  opacity: 0.2;
-}
-
-.opacity-80{
-  opacity: 0.8;
+.opacity-30{
+  opacity: 0.3;
 }
 
 .opacity-70{
   opacity: 0.7;
 }
 
-.opacity-50{
-  opacity: 0.5;
-}
-
-.opacity-30{
-  opacity: 0.3;
+.opacity-80{
+  opacity: 0.8;
 }
 
 .drop-shadow-md{
@@ -1306,7 +1162,7 @@ html, body{
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #6C6C6C;
+  background-color: #CDB466;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -1400,10 +1256,6 @@ html, body{
     visibility: hidden;
   }
 
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:w-auto{
     width: auto;
   }
@@ -1450,16 +1302,12 @@ html, body{
     width: 25%;
   }
 
-  .md\:w-\[40px\]{
-    width: 40px;
+  .md\:w-\[400px\]{
+    width: 400px;
   }
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-\[400px\]{
-    width: 400px;
   }
 
   .md\:flex-row{
