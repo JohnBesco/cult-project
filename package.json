@@ -20,5 +20,8 @@
   "homepage": "https://github.com/JohnBesco/cult-project#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
