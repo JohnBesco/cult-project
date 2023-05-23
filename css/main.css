@@ -3241,8 +3241,7 @@ video {
 }
 
 html, body{
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   height: -moz-fit-content;
   height: fit-content;
   margin: 0;

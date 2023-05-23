@@ -11,7 +11,7 @@
 
 
 html, body{
-    width: fit-content;
+    width: auto;
     height: fit-content;
     margin: 0;
     padding: 0;
