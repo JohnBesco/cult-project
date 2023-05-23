@@ -11,8 +11,8 @@
 <body>
     <div id="main-container" class="relative">
 
-        <img src="assets/topleftgraphic.svg"  alt="" class="absolute -z-1 top-0 left-0 opacity-80 md:visible w-min h-min">
-        <img src="assets/toprightgraphic.svg" alt="" class="absolute -z-1 top-0 right-0 opacity-30 invisible md:visible w-min h-min">
+        <img src="assets/topleftgraphic.svg"  alt="" class="absolute -z-1 top-0 left-0 opacity-80 md:visible">
+        <img src="assets/toprightgraphic.svg" alt="" class="absolute -z-1 top-0 right-0 opacity-30 invisible md:visible">
 
         <!-- Nav Bar -->
 
@@ -20,7 +20,7 @@
             <nav class="relative container mx-auto p-5 z-10 shadow-sm">
                 <div class="flex items-center justify-between pt-5">
                     <div class="pt-2">
-                        <img src="assets/cultlogo1.png" alt="" id="logo" class="w-min h-min">
+                        <img src="assets/cultlogo1.png" alt="" id="logo">
                     </div>
                     <div class="hidden md:flex space-x-16 nav-items" >
                         <a href="#hero-section" class="hover:text-gold">Home</a>
@@ -87,8 +87,8 @@
                     </div>                    
                 </div>
                 <div class="z-10 relative">
-                    <img src="assets/cultlogo.png" alt="" class="z-10 hiddenEl w-min h-min">
-                    <img src="assets/homedotgrid.svg" alt="" class="absolute bottom-1 -left-2 -z-10 hiddenEl w-min h-min">
+                    <img src="assets/cultlogo.png" alt="" class="z-10 hiddenEl">
+                    <img src="assets/homedotgrid.svg" alt="" class="absolute bottom-1 -left-2 -z-10 hiddenEl">
                 </div>
             </div>
         </section>
@@ -171,7 +171,7 @@
                 </div>
 
                 <div class="flex flex-col text-center border-white/[.35] md:p-12 justify-center items-center md:flex-row md:border-[1px] relative ">
-                    <img src="assets/tokenomicsgraphic.svg" loading="lazy" alt="" class="absolute top-0 right-0 -z-1 opacity-70 invisible md:visible w-min h-min">
+                    <img src="assets/tokenomicsgraphic.svg" loading="lazy" alt="" class="absolute top-0 right-0 -z-1 opacity-70 invisible md:visible">
                     <div class="flex text-center justify-center items-center mb-10 md:w-1/2">
                         <img src="assets/chart.png" loading="lazy" alt="Tokenomics Chart" class="m-0 p-0 w-[400px] md:w-[400px]">
                     </div>
@@ -197,8 +197,8 @@
 
         <!--- Roadmap Section -->
 
-        <img src="assets/roadmaprightgraphic.svg" loading="lazy" alt="" class="absolute bottom-0 right-0 -z-1 opacity-30 w-min h-min">
-        <img src="assets/roadmapleftgraphic.svg" loading="lazy" alt="" class="absolute bottom-0 left-0 -z-1 opacity-30 invisible md:visible w-min h-min">
+        <img src="assets/roadmaprightgraphic.svg" loading="lazy" alt="" class="absolute bottom-0 right-0 -z-1 opacity-30">
+        <img src="assets/roadmapleftgraphic.svg" loading="lazy" alt="" class="absolute bottom-0 left-0 -z-1 opacity-30 invisible md:visible">
 
 
         <section id="roadmap-section" class="mt-80 z-10">
@@ -332,11 +332,18 @@
             </div>
 
         </section>
-        
     </div>
 
+    <!-- Back to Top Button -->
 
-    
+    <div class="fixed z-30 bottom-0 right-0 mr-20 mb-20">
+        <a href="#" id="back2top" class="text-white block bg-gold bg-opacity-50 rounded-full">
+            <span class="hidden">Back to Top</span>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10 animate-pulse">
+                <path fill="currentColor" d="M7.41, 15.41L12, 10.83L16.59,15.41L18, 14L12, 8L6, 14L7.41, 15.41Z" />
+            </svg>
+        </a>
+    </div>
     <script src="js/script.js" defer></script>
 </body>
 </html>
