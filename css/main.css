@@ -2806,8 +2806,8 @@ video {
   margin-top: 9rem;
 }
 
-.mt-40{
-  margin-top: 10rem;
+.mt-44{
+  margin-top: 11rem;
 }
 
 .mt-48{
@@ -2816,10 +2816,6 @@ video {
 
 .mt-80{
   margin-top: 20rem;
-}
-
-.mt-44{
-  margin-top: 11rem;
 }
 
 .block{
@@ -2842,40 +2838,16 @@ video {
   height: 1.25rem;
 }
 
+.h-\[120px\]{
+  height: 120px;
+}
+
 .h-\[250px\]{
   height: 250px;
 }
 
 .h-\[400\]{
   height: 400;
-}
-
-.h-\[200\]{
-  height: 200;
-}
-
-.h-\[300\]{
-  height: 300;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-\[100px\]{
-  height: 100px;
-}
-
-.h-\[150px\]{
-  height: 150px;
-}
-
-.h-\[120px\]{
-  height: 120px;
 }
 
 .w-1\/3{
@@ -2898,40 +2870,16 @@ video {
   width: 1.25rem;
 }
 
+.w-\[300px\]{
+  width: 300px;
+}
+
 .w-\[400px\]{
   width: 400px;
 }
 
-.w-\[600px\]{
-  width: 600px;
-}
-
 .w-full{
   width: 100%;
-}
-
-.w-\[200px\]{
-  width: 200px;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[150px\]{
-  width: 150px;
-}
-
-.w-\[120px\]{
-  width: 120px;
-}
-
-.w-\[160px\]{
-  width: 160px;
-}
-
-.w-\[300px\]{
-  width: 300px;
 }
 
 .max-w-md{
@@ -3137,10 +3085,6 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-44{
-  padding-top: 11rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -3193,6 +3137,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -3201,11 +3150,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -3402,45 +3346,31 @@ html, body{
   transition: all 1s;
 }
 
-.animate__fadeInUp {
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
 
-.socials:nth-child(1) {
+@media(prefers-reduced-motion) {
+  .hiddenEl {
+    transition: none;
+  }
+}
+
+.delayAnimation:nth-child(2) {
   transition-delay: 200ms;
 }
 
-.socials:nth-child(2) {
+.delayAnimation:nth-child(3) {
   transition-delay: 400ms;
 }
 
-.socials:nth-child(3) {
+.delayAnimation:nth-child(4) {
   transition-delay: 600ms;
 }
 
-.socials:nth-child(4) {
-  transition-delay: 800ms;
-}
-
-.socials:nth-child(5) {
-  transition-delay: 1000ms;
-}
-
-.phases:nth-child(1) {
-  transition-delay: 200ms;
-}
-
-.phases:nth-child(2) {
-  transition-delay: 400ms;
-}
-
-.phases:nth-child(3) {
-  transition-delay: 600ms;
-}
-
-.phases:nth-child(4) {
+.delayAnimation:nth-child(5) {
   transition-delay: 800ms;
 }
 
@@ -3522,24 +3452,12 @@ html, body{
     margin-bottom: 2.5rem;
   }
 
-  .md\:mt-40{
-    margin-top: 10rem;
-  }
-
-  .md\:mt-48{
-    margin-top: 12rem;
-  }
-
-  .md\:mt-96{
-    margin-top: 24rem;
+  .md\:mt-56{
+    margin-top: 14rem;
   }
 
   .md\:mt-64{
     margin-top: 16rem;
-  }
-
-  .md\:mt-56{
-    margin-top: 14rem;
   }
 
   .md\:block{
@@ -3554,24 +3472,16 @@ html, body{
     display: none;
   }
 
-  .md\:h-full{
-    height: 100%;
+  .md\:h-\[400\]{
+    height: 400;
   }
 
   .md\:h-\[500\]{
     height: 500;
   }
 
-  .md\:h-\[600\]{
-    height: 600;
-  }
-
-  .md\:h-\[400\]{
-    height: 400;
-  }
-
-  .md\:h-\[200\]{
-    height: 200;
+  .md\:h-full{
+    height: 100%;
   }
 
   .md\:w-1\/2{
@@ -3590,20 +3500,16 @@ html, body{
     width: 400px;
   }
 
-  .md\:w-full{
-    width: 100%;
+  .md\:w-\[500px\]{
+    width: 500px;
   }
 
   .md\:w-\[600px\]{
     width: 600px;
   }
 
-  .md\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .md\:w-\[500px\]{
-    width: 500px;
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:flex-row{
@@ -3654,10 +3560,6 @@ html, body{
     padding: 3rem;
   }
 
-  .md\:pt-64{
-    padding-top: 16rem;
-  }
-
   .md\:text-left{
     text-align: left;
   }
@@ -3686,6 +3588,11 @@ html, body{
     line-height: 1;
   }
 
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -3696,11 +3603,6 @@ html, body{
     line-height: 1.75rem;
   }
 
-  .md\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:leading-loose{
     line-height: 2;
   }
@@ -3709,3 +3611,5 @@ html, body{
     line-height: 1.5;
   }
 }
+
+

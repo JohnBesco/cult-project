@@ -7,17 +7,16 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('hidden');
 });
 
-const observer = new IntersectionObserver ((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('animate__animated', 'animate__fadeInUp');
+            entry.target.classList.remove('show');
         }
     });
 });
 
 const hiddenElements = document.querySelectorAll('.hiddenEl');
 
-hiddenElements.forEach((hiddenEl) => observer.observe(hiddenEl));
+hiddenElements.forEach((el) => observer.observe (el));

@@ -91,7 +91,6 @@ html, body{
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-
 .hiddenEl {
     opacity: 0;
     filter: blur(5px);
@@ -99,49 +98,33 @@ html, body{
     transition: all 1s;
 }
 
-.animate__fadeInUp {
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
-.socials:nth-child(1) {
+@media(prefers-reduced-motion) {
+    .hiddenEl {
+        transition: none;
+    }
+}
+
+.delayAnimation:nth-child(2) {
     transition-delay: 200ms;
 }
 
-.socials:nth-child(2) {
+.delayAnimation:nth-child(3) {
     transition-delay: 400ms;
-
 }
 
-.socials:nth-child(3) {
+
+.delayAnimation:nth-child(4) {
     transition-delay: 600ms;
 }
 
-.socials:nth-child(4) {
+.delayAnimation:nth-child(5) {
     transition-delay: 800ms;
 }
 
-.socials:nth-child(5) {
-    transition-delay: 1000ms;
-}
 
-
-
-
-.phases:nth-child(1) {
-    transition-delay: 200ms;
-}
-
-.phases:nth-child(2) {
-    transition-delay: 400ms;
-
-}
-
-.phases:nth-child(3) {
-    transition-delay: 600ms;
-}
-
-.phases:nth-child(4) {
-    transition-delay: 800ms;
-}
