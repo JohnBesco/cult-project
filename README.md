@@ -1,4 +1,4 @@
-# bull-token
+# cult-token
 
 This project was for a cryptocurrency group, who wanted a landing page for their new token. 
 
