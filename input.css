@@ -115,14 +115,19 @@ html, body{
 }
 
 .delayAnimation:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 }
 
 
 .delayAnimation:nth-child(4) {
-    transition-delay: 600ms;
+    transition-delay: 500ms;
 }
 
 .delayAnimation:nth-child(5) {
-    transition-delay: 800ms;
+    transition-delay: 700ms;
 }
+
+.delayAnimation:nth-child(6) {
+    transition-delay: 900ms;
+}
+
